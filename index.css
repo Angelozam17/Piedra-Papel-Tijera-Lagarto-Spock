@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+body header {
+  background-color: #fff;
+  color: #333;
+}
+body header h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 0.8em;
+  text-align: center;
+}
+body .tablero {
+  border: 3px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 3em;
+  margin: 17px auto;
+  padding: 5px 10px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  width: 225px;
+}
+body .tablero .me-user,
+body .tablero .pc-user {
+  background-color: #d32f2f;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.25em;
+  padding: 2px auto;
+  width: 60px;
+}
+body .tablero .me-user {
+  left: -35px;
+  position: absolute;
+  top: 40%;
+}
+body .tablero .pc-user {
+  position: absolute;
+  right: -35px;
+  top: 40%;
+}
+body .resultado {
+  font-size: 1.5em;
+  color: #fff;
+}
+body .resultado p {
+  text-align: center;
+  font-weight: bold;
+}
+body .manos {
+  text-align: center;
+  margin: 10px 0;
+}
+body .manos div {
+  display: inline-block;
+  border: 4px solid #fff;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.2s background-color ease;
+}
+body .manos div .far::before {
+  font-size: 50px;
+  color: #d32f2f;
+  transition: 0.2s color ease;
+}
+body .manos div:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+body .manos div:hover .far::before {
+  color: #333;
+}
+body .mensaje {
+  text-align: center;
+  color: #fff;
+  font-size: 1em;
+  margin-top: 20px;
+}

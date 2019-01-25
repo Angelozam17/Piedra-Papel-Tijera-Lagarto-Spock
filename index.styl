@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+Dark = darken(#494949, 30%)
+Light = #a4a4a4
+Primary = #757575
+Secondary = #d32f2f
+
+*{
+  	box-sizing: border-box;
+  	padding 0;
+    margin 0;
+}
+body
+	background-color Dark 
+	font-family: 'Poppins', sans-serif;
+
+	header
+		background-color white
+		color Dark
+
+		h1
+			font-size 1.8em
+			font-weight bold
+			padding .8em
+			text-align center
+
+	.tablero
+		border 3px solid white
+		border-radius 10px
+		color white
+		font-size 3em
+		margin 17px auto
+		padding 5px 10px
+		position relative
+		text-align center
+		text-transform uppercase
+		width 225px
+
+		.me-user, .pc-user
+			background-color Secondary
+			border-radius 10px
+			color white
+			font-size .25em
+			padding 2px auto
+			width 60px
+
+		.me-user
+			left -35px
+			position absolute
+			top 40%
+		
+		.pc-user
+			position absolute
+			right -35px
+			top 40%
+
+	.resultado
+		font-size 1.5em
+		color white
+
+		p
+			text-align center
+			font-weight bold
+
+	.manos
+		text-align center
+		margin 10px 0
+		div
+			display inline-block
+			border 4px solid white
+			padding 10px
+			border-radius 50%
+			margin 0 10px
+			transition .2s background-color ease
+
+			.far::before
+				font-size 50px
+				color Secondary
+				transition .2s color ease
+
+
+		div:hover
+			background-color white
+			cursor pointer
+			.far::before
+				color Dark
+
+	.mensaje
+		text-align center
+		color white
+		font-size 1em
+		margin-top 20px 
+
+			
+		
+

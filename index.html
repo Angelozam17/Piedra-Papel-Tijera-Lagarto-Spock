@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Piedra, Papel, Tijera, Lagarto, Spock</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <h1>Piedra Papel Tijera Lagarto Spock</h1>
+    </header>
+
+    <div class="tablero">
+        <div class="me-user">user</div>
+        <div class="pc-user">pc</div>
+        <span class="me-score" id="me-score">0</span> : <span class="pc-score" id="pc-score">0</span>     
+    </div>
+
+    <div class="resultado">
+        <p>Hola</p>
+    </div>
+
+    <div class="manos">
+        <div class="piedra" id="r">
+            <i class="far fa-hand-rock"></i>
+        </div>
+
+        <div class="papel" id="p">
+            <i class="far fa-hand-paper size:7x"></i>
+        </div>
+
+        <div class="tijera" id="sc">
+            <i class="far fa-hand-scissors"></i>
+        </div>
+
+        <div class="lagarto" id="l">
+            <i class="far fa-hand-lizard"></i>
+        </div>
+
+        <div class="spock" id="sp">
+            <i class="far fa-hand-spock"></i>
+        </div>
+    </div>
+
+    <p id="mensaje" class="mensaje">Haz tu movimiento</p>
+
+    <script src="index.js"></script>
+</body>
+</html>
